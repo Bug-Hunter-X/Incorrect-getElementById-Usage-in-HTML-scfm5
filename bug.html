@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+  <script>
+    //Incorrect way to access a div
+    const myDiv = document.getElementById('#myDiv');
+    if (myDiv) {
+      myDiv.innerHTML = "<p>Text changed</p>";
+    }
+  </script>
+</body>
+</html>
